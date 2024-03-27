@@ -1,0 +1,38 @@
+{% load static %}        
+        <!-- # journal
+        ================================================== -->
+        <section id="berita" class="s-journal">
+
+            <div class="row s-journal__content width-sixteen-col">
+                <div class="column xl-12 grid-block">
+
+                    <div class="grid-full section-header text-center">
+                        <div class="text-pretitle">Recent Articles</div>
+                        <h2 class="text-display-title">
+                            Latest articles from my blog.
+                        </h2>
+                    </div> <!-- end section-header -->
+
+                    <div class="grid-full s-journal__content-main grid-list-items">
+
+                        {% for item in Berita %}
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="https://www.dreamhost.com/r.cgi?287326">{{item.kategori}}</a>
+                                </div>
+                                <h3 class="blog-card__title"><a href="#">{{item.judul}}</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p style="max-height: calc(1.2em * 5); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                    {{item.deskripsi}}
+                                </p>
+                            </div>
+                        </div> <!-- end blog-card -->
+                        {% endfor %}
+                    </div> <!-- end grid-list-items -->
+
+                </div> <!-- end grid-block-->
+            </div> <!-- end s-journal__content -->
+
+        </section> <!-- end s-journal -->

@@ -1,0 +1,50 @@
+{% load static %}            
+            <!-- clients
+            ----------------------------------------------- -->
+            <section id="clients" class="s-clients">
+
+                <div class="row s-clients__content-block width-sixteen-col">
+                    <div class="column xl-12 grid-block grid-section-split">
+
+                        <div class="section-header grid-section-split__header">
+                            <div class="text-pretitle">Coworker</div>
+                            <h2 class="text-display-title">
+                                I have had the privilege of working with these incredible friends.
+                            </h2>
+                        </div> <!-- end section-header -->
+                    </div> <!-- end column -->
+                </div> <!-- end row -->
+
+
+                <div class="row s-clients__content-block width-sixteen-col">
+                    <div class="column xl-12 testimonials">
+
+                        <div class="swiper-container testimonials__slider home-slider">
+
+                            <div class="swiper-wrapper">
+                                {% for item in Testimoni %}
+                                <div class="testimonials__slide swiper-slide">
+                                    <p>
+                                        {{item.deskripsi}}
+                                    </p>
+                                    <div class="testimonials__author">
+                                        <!-- <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar"> -->
+                                        <cite class="testimonials__cite">
+                                            <strong>{{item.nama}}</strong>
+                                            <span>{{item.email}}</span>
+                                        </cite>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div> <!-- end swiper-wrapper -->
+
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                        <!--end testimonials__slider -->
+
+                    </div> <!-- end column -->
+                </div> <!-- end row -->
+
+
+            </section> <!-- end s-clients -->

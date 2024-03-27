@@ -1,0 +1,19 @@
+{% load static %}
+    <section id="intro" class="s-cta p-5">
+        <h4 class="s-intro__content-title">
+            your words can provide valuable insight into my contributions and excellence in teamwork. Let's share
+            stories and appreciation to build inspiration and spirit together!
+        </h4>
+
+        <div class="m-5 p-5">
+            <form method="POST">
+                {% csrf_token %}
+                <input class="u-fullwidth text-center" type="text" id="nama" name="nama" style="background-color: var(--color-3)">
+                <input class="u-fullwidth text-center" type="email" id="email" name="email"
+                    style="background-color: var(--color-3)">
+                <textarea class="u-fullwidth text-center" name="deskripsi" id="deskripsi" cols="30" rows="10"
+                    style="background-color: var(--color-3)"></textarea>
+                <button type="submit" style="background-color: var(--color-3)">Add</button>
+            </form>
+        </div>
+    </section>
