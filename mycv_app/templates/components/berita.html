@@ -18,6 +18,7 @@
                         {% for item in Berita %}
                         <div class="grid-list-items__item blog-card">
                             <div class="blog-card__header">
+                                <img src="{{item.cover.url}}" style="max-width: 300px;">
                                 <div class="blog-card__cat-links">
                                     <a href="{{item.link}}">{{item.kategori}}</a>
                                 </div>
