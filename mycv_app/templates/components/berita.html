@@ -7,9 +7,9 @@
                 <div class="column xl-12 grid-block">
 
                     <div class="grid-full section-header text-center">
-                        <div class="text-pretitle">Recent Articles</div>
+                        <div class="text-pretitle">Artikel Terkini</div>
                         <h2 class="text-display-title">
-                            Latest articles from my blog.
+                            Artikel berita terkini dari Portal Berita.
                         </h2>
                     </div> <!-- end section-header -->
 
@@ -19,13 +19,13 @@
                         <div class="grid-list-items__item blog-card">
                             <div class="blog-card__header">
                                 <div class="blog-card__cat-links">
-                                    <a href="https://www.dreamhost.com/r.cgi?287326">{{item.kategori}}</a>
+                                    <a href="{{item.link}}">{{item.kategori}}</a>
                                 </div>
-                                <h3 class="blog-card__title"><a href="#">{{item.judul}}</a></h3>
+                                <h3 class="blog-card__title"><a href="{{item.link}}">{{item.judul}}</a></h3>
                             </div>
                             <div class="blog-card__text">
-                                <p style="max-height: calc(1.2em * 5); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                                    {{item.deskripsi}}
+                                <p style="max-height: 200px; overflow: hidden;">
+                                    {{item.deskripsi}}...
                                 </p>
                             </div>
                         </div> <!-- end blog-card -->

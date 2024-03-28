@@ -9,7 +9,7 @@ admin.site.site_title = "myCv"
 admin.site.index_title = "Admin myCv"
 
 class BeritaAdmin(ImportExportModelAdmin, admin.ModelAdmin):
-    list_display = ('id', 'judul', 'deskripsi', 'created', 'image_tag')
+    list_display = ('id', 'judul', 'link', 'deskripsi', 'created', 'image_tag')
     list_filter = ('id', 'judul', 'deskripsi', 'created')
     search_fields = ('id', 'judul', 'deskripsi', 'created')
 

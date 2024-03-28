@@ -6,4 +6,4 @@ from .models import *
 class TestimoniForm(forms.ModelForm):
     class Meta: 
         model = Testimoni
-        fields = ['nama', 'email', 'deskripsi']
+        fields = ['nama', 'profesi', 'email', 'deskripsi']

@@ -3,6 +3,7 @@ from django.utils.html import mark_safe
 
 # Create your models here.
 class Berita (models.Model):
+    link = models.CharField(max_length=200, default='')
     judul = models.CharField(max_length=200)
     deskripsi = models.TextField()
     kategori = models.CharField(max_length=20)
@@ -15,6 +16,7 @@ class Berita (models.Model):
 
 class Testimoni (models.Model):
     nama = models.CharField(max_length=200)
+    profesi = models.CharField(max_length=200, default='')
     email = models.EmailField(max_length=200)
     deskripsi = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
