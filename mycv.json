@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "mycv/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "mycv/wsgi.py"
+      }
+    ],
+    "DISABLE_COLLECTSTATIC": {
+      "description": "Don't run python manage.py collecstatic --noinput on deploy",
+      "value": "1"
+    }
+  }
