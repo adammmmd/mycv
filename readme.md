@@ -15,11 +15,11 @@ Aplikasi web ini dibangun menggunakan Django dan Python, dirancang untuk menampi
 
 ## Instalasi
 
-1. Klon repositori ini atau unduh sebagai ZIP dan ekstrak. \s
+1. Klon repositori ini atau unduh sebagai ZIP dan ekstrak.\
    `git clone https://github.com/adammmmd/mycv.git`
-2. install library yang digunakan dan jalankan aplikasi \s
-   `pip install pillow django_import_export` \s
+2. install library yang digunakan dan jalankan aplikasi\
+   `pip install pillow django_import_export`\
    `python manage.py runserver`
 
-untuk mengakses data dengan django-admins
+untuk mengakses data dengan django-admin\
 `python manage.py createsuperuser`
